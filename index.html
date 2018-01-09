@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="供应链，通关，物流，仓储，风控，金融"/>
+    <meta name="description" content="乐猫综服对信息流，资金流，物流三个核心流程能够很好的运转。平台的目标是为企业搭建一个高效的信息交流平台，创建一个良好的商业信用环境。致力于打造这样的一个第三方电子商务平台，应用集合、整合、融合的理念，帮助中小企业成长和发展。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="stylesheets/admin-index.css">
+    <link rel="stylesheet" href="lmfont/iconfont.css">
+    <!--[if lte IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">今日数据统计</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>119</span><br>今日完成订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>56</span><br>今日新增客户</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>2</span><br>今日新增商品</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>34</span><br>今日下单数</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">代办事项</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>119</span><br>待审核订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>56</span><br>待付款订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>2</span><br>待修改订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>34</span><br>待审核用户</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-card rate">
+                <div class="layui-card-header">增长率</div>
+                <div class="layui-card-body" style="padding-bottom: 18px">
+                    <h3>订单增长率（月同比<span>28%</span>）</h3>
+                    <div class="layui-progress">
+                        <div class="layui-progress-bar" style="width: 65%">
+                            <span class="layui-progress-text">65%</span>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 10px">订单失败率（月同比<span>5%</span>）</h3>
+                    <div class="layui-progress">
+                        <div class="layui-progress-bar" style="width: 5%">
+                            <span class="layui-progress-text">5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md6 admin-chunk">
+            <div class="layui-card">
+                <div class="layui-card-header">七日全平台统计</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>119</span><br>订单总数</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>￥56</span><br>结算总额</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>2</span><br>客户入驻</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>34</span><br>服务商入驻</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>2</span><br>订单增长数</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>34</span><br>订单失败数</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md6 admin-chunk">
+            <div class="layui-card">
+                <div class="layui-card-header">全平台统计</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>119</span><br>订单总数</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>￥56</span><br>结算总额</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>2</span><br>客户入驻</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>34</span><br>服务商入驻</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>2</span><br>订单增长数</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6 layui-col-sm3">
+                            <a>
+                                <i><span>34</span><br>订单失败数</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md4 admin-chunk">
+            <div class="layui-card">
+                <div class="layui-card-header">七日订单统计</div>
+                <div class="layui-card-body">
+                    <div id="for_order" style="height: 320px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4 admin-chunk">
+            <div class="layui-card">
+                <div class="layui-card-header">七日客户入驻统计</div>
+                <div class="layui-card-body">
+                    <div id="for_customer" style="height: 320px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4 admin-chunk">
+            <div class="layui-card">
+                <div class="layui-card-header">七日服务商入驻统计</div>
+                <div class="layui-card-body">
+                    <div id="for_server" style="height: 320px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">数据快照</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>119</span><br>今日完成订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>56</span><br>今日新增客户</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>2</span><br>今日新增商品</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>34</span><br>今日下单数</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">代办事项</div>
+                <div class="layui-card-body">
+                    <ul class="layui-row layui-col-space10 data-item">
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>119</span><br>待审核订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>56</span><br>待付款订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>2</span><br>待修改订单</i>
+                            </a>
+                        </li>
+                        <li class="layui-col-xs6">
+                            <a>
+                                <i><span>34</span><br>待审核用户</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-card rate">
+                <div class="layui-card-header">增长率</div>
+                <div class="layui-card-body" style="padding-bottom: 18px">
+                    <h3>订单增长率（月同比<span>28%</span>）</h3>
+                    <div class="layui-progress">
+                        <div class="layui-progress-bar" style="width: 65%">
+                            <span class="layui-progress-text">65%</span>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 10px">订单失败率（月同比<span>5%</span>）</h3>
+                    <div class="layui-progress">
+                        <div class="layui-progress-bar" style="width: 5%">
+                            <span class="layui-progress-text">5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/echarts.common.min.js"></script>
+<script>
+    createChart();
+    //创建柱状图
+    function createChart(){
+        var order_chart = echarts.init(document.getElementById('for_order'));
+        var customer_chart = echarts.init(document.getElementById('for_customer'));
+        var server_chart = echarts.init(document.getElementById('for_server'));
+        var option = {
+            color: ['#979797'],
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'line',        // 默认为直线，可选为：'line' | 'shadow'
+                    lineStyle:{
+                        color:["#979797"]
+                    }
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    splitLine:{
+                        show:false
+                    },
+                    axisLine:{
+                        lineStyle:{
+                            color: ['#888'],
+                            width:1
+                        }
+                    },
+                    data: ['30/11/2016','31/12/2016','6/1/2017','13/1/2017',
+                        '20/1/2017','27/1/2017','3/2/2017','10/2/2017','17/2/2017','24/2/2017','3/3/2017','10/3/2017','17/3/2017'],
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }
+            ],
+            yAxis : [
+                {
+                    name:'NAV（$）',
+                    position:'left',
+                    type : 'value',
+                    splitLine:{
+                        lineStyle:{
+                            color:["#888"],
+                            width:0.3
+                        }
+                    },
+                    axisLine:{
+                        lineStyle:{
+                            color: ['#888']
+                        }
+                    },
+                    splitNumber:10,
+                    min:95,
+                    max:110
+                },
+                {
+                    name:'AUM（K$）',
+                    position:'right',
+                    type : 'value',
+                    splitLine:{
+                        show:false,
+                        lineStyle:{
+                            color:["#888"],
+                            width:0.3
+                        }
+                    },
+                    axisLine:{
+                        lineStyle:{
+                            color: ['#888']
+                        }
+                    },
+                    splitNumber:10,
+                    min:0,
+                    max:800
+                }
+            ],
+            series : [
+                {
+                    name:'AUM',
+                    type:'bar',
+                    color: ['#DCB161'],
+                    yAxisIndex: 1,
+                    barWidth: '30%',
+                    // data: [359473.40,358371.27,549662.48,248890.96,248256.76,247693.27,
+                    //     260400.66,260980.94,251564.93,249903.16,245880.01,242706.28,
+                    //     256662.96,255671.91,256256.27,259434.75,258584.50,5721041.67]
+                    data: [247.69327,
+                        531.24430,513.63207,508.16197,507.49206,505.36241,500.17621,
+                        512.74526,512.49011,513.20847,515.52862,515.36047,515.59271]
+                },
+                {
+                    name:'NAV',
+                    type:'line',
+                    smooth: true,
+                    lineStyle: {
+                        normal: {
+                            color: ['#DCB161'],
+                            width: 1
+                        }
+                    },
+                    data: [100.00000000,106.24886000,102.72641400,101.63239400,101.49841200,101.07248200,
+                        100.03524200,102.54905200,102.49802200,102.64169400,103.10572400,103.07209400,
+                        103.11854200]
+                }
+            ]
+        };
+
+        order_chart.setOption(option);
+        customer_chart.setOption(option);
+        server_chart.setOption(option);
+
+        window.onresize = function () {
+            order_chart.resize();
+            customer_chart.resize();
+            server_chart.resize();
+        }
+    }
+</script>
+</body>
+</html>
